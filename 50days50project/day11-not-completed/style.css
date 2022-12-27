@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    gap: 25px;
+    align-items: center;
+    background-color: salmon;
+    
+}
+
+.boxes{
+    background-color:cornflowerblue;
+    padding: 10px;
+}
+.boxes p{
+    font-weight: bold;
+    color: white;
+    padding: 10px 0px;
+}
+
+.box{
+    padding: 15px 5px;
+    background-color: salmon;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+}

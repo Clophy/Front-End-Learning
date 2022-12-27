@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 150vh;
+}
+.container{
+    background-color: salmon;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.boxes{
+    width: max-content;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    border: 1px solid wheat;
+    background-color:thistle;
+    padding: 50px 75px;
+    font-size:50px;
+    margin-top: 10px;
+    display: none;
+}
+.box:nth-child(1){
+    display: block;
+}
+
+.show{
+    display: block;
+}

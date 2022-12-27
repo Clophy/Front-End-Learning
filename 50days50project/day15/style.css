@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: salmon;
+} 
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+
+.boxes {
+  width: min-content;
+  min-width: 200px;
+  height: min-content;
+  min-height: 140px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 2px silver;
+  border-radius: 25px;
+}
+
+i{
+  font-size: 60px;
+  padding: 10px;
+  color:silver;
+}
+
+.sayi{
+  font-size: 45px;
+  padding: 10px;
+}
+p{
+  padding-bottom: 10px;
+}

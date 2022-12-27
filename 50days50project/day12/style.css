@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: salmon;
+}
+.container{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rebeccapurple;
+}
+
+h1{
+    padding: 40px;
+}
+
+.boxes{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+
+}
+ h2{
+    text-align: left;
+    width: 80%;
+ }
+ i{
+    width: 20%;
+    cursor: pointer;
+ }
+ p{ 
+    padding: 20px 5px 5px;
+ }
+
+ .img{
+    background-image:url("https://picsum.photos/950/600") ;
+ }
+
+ .display{
+    display: none;
+ }

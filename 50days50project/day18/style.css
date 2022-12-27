@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://picsum.photos/1920/1080");
+
+}
+
+.arrow{
+    font-size: 48px;
+    color: white;
+    padding: 15px;
+    border: orange 1px solid;
+    z-index: 1;
+        
+}
+.left-arrow{
+    border-right: none;
+}
+.right-arrow{
+    border-left: none;
+}
+
+.clear-box{
+    width: 60%;
+    height: 60%;
+    outline: 1000px solid rgba(0, 0, 0, 0.45);
+    box-shadow:1px 1px 25px 1px black;
+
+}

@@ -1,4 +1,4 @@
-let sehir =["Samsun","Bursa","İzmir","İstanbul","Ankara"]
+let sehir =["Samsun","Bursa","İzmir","İstanbul","Osmaniye"]
 let esya =["Bilgisayar","Mouse","Klavye","Monitör"]
 let gida =["Çikolata","Peynir","Domates"]
 let kategory =[sehir,esya,gida]
@@ -7,14 +7,15 @@ let guessDOM = document.querySelector(".guess")
 let buttonDOM = document.querySelector("button")
 let keysDOM = document.querySelectorAll(".active")
 let imgDOM = document.querySelector("img")
+let containerDOM = document.querySelector(".container")
 
 let first = kategory[Math.floor(Math.random() * kategory.length)]
 let second = first[Math.floor(Math.random() * first.length)]
-
+let span;
 
 function generator(){
     for(i=0;i<second.length;i++){
-        let span = document.createElement("span")
+        span = document.createElement("span")
         guessDOM.append(span)
     }
 }
@@ -53,9 +54,23 @@ function reverseDiv(){
     }
     else{
         
-        if(i<12){
+        if(i<11){
             i += 1
             imgDOM.src=`./img/${i}.png`
         }
+        if(i===11){
+            imgDOM.src=`./img/11.png`
+            keysDOM.forEach(e => e.classList="passive")
+            popup()
+    
+        }
     }
+}
+
+
+function popup(){
+    let popap = document.createElement("div")
+    popap.innerHTML = "KAYBETTİN"
+    popap.classList="popup"
+    containerDOM.append(popap)
 }

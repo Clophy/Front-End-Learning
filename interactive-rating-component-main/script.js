@@ -33,6 +33,8 @@ function changeIt() {
         ulDOM.style.display="none"
         titleDOM.style.textAlign="center"
         contentDOM.style.textAlign="center"
+        submitDOM.innerHTML="AGAIN"
+        submitDOM.addEventListener("click",hey=> window.location.reload())
     }
   });
 }

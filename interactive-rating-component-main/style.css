@@ -1,0 +1,98 @@
+.main{
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    padding: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: darkgray;
+    border-radius: 20px;
+}
+
+.star{
+    padding: 12px;
+    background-color: black;
+    width: max-content;
+    border-radius: 50%;
+}
+
+.card-title{
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+}
+
+.card-content{
+    margin-top: 16px;
+    color: white;
+    opacity: 0.8;
+}
+
+ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{ 
+    background-color: gray;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    width: 16%;
+    
+}
+
+li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+}
+
+.submit{
+    border: 1px solid orange;
+    background-color: orange;
+    width: 100%;
+    padding: 12px 0px;
+    margin-top: 16px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+li a:hover{
+    background-color: orange;
+}
+.active{
+    background-color: darkslategray;
+}
+
+.result{
+    color: orange;
+    background-color: darkslategray;
+    padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: max-content;
+    display: none;
+}

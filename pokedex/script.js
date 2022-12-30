@@ -38,15 +38,7 @@ async function baran(){
        })
         
     }
-    
-
-
-
-
-
-
-
-    }
+}
 }
 
 baran()

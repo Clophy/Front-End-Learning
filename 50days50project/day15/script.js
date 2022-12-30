@@ -12,18 +12,18 @@ function counter() {
     let fb = 18950
     if(twitter.innerHTML<tw){
         sayitw++;
-        sayitw = Math.floor(sayitw * 4)
+        sayitw = Math.floor(sayitw * 1.5)
 
         twitter.innerHTML = sayitw;
       }
     if(youtube.innerHTML<yt){
         sayiyt++;
-        sayiyt = Math.floor(sayiyt * 4)
+        sayiyt = Math.floor(sayiyt * 1.5)
         youtube.innerHTML = sayiyt;
       }
     if(facebook.innerHTML<fb){
         sayifb++;
-        sayifb = Math.floor(sayifb * 4)
+        sayifb = Math.floor(sayifb * 1.5)
         facebook.innerHTML = sayifb;
       }
       if (sayitw > tw && sayiyt > yt && sayifb > fb){

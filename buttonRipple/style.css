@@ -1,0 +1,39 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+button{
+    background-color: salmon;
+    padding: 72px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+span{
+    position: relative;
+    font-size: 36px;
+    z-index: 1;
+}
+
+button::before{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    top: var(--yPosition);
+    left: var(--xPosition);
+    transform: translate(-50%,-50%);
+}
+
+button:hover::before{
+    background-color: red;
+    transition: width 1s linear,height 1s linear;
+    width: 1350px;
+    height:1350px;
+}

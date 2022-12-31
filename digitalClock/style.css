@@ -63,5 +63,7 @@ body{
     color: white;
     background-color: green;
     opacity: .4;
-    padding: 8px;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
 }

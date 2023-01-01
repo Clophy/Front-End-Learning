@@ -1,0 +1,75 @@
+body{
+    background-color: salmon;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 32px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 48px;
+    min-height: 160px;
+}
+label{
+    width: 40%;
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    align-self: center;
+    text-align: center;
+}
+
+input{
+    width: 50%;
+    align-self: center;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    margin-top: 12px;
+    padding: 12px;
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+
+ul li{
+    border: 1px solid black;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: white;
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+}
+ul li p{
+    width: 88%;
+}
+ul li span{
+    width: 12%;
+    display: flex;
+
+}
+
+ul li span i{
+    width: 33%;
+    text-align: center;
+    color: gainsboro;
+}
+
+ul li span i:hover{
+    color: black;
+}
+

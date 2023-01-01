@@ -14,7 +14,7 @@ if(getStorage){
                      <i onClick="important(this)"class="important fa-solid fa-triangle-exclamation"></i>
                      <i onClick="visible(this)"class="visible fa-regular fa-eye-slash"></i>
                    </span>`;
-        ul.insertAdjacentElement("beforeend", newLi);
+        ul.insertAdjacentElement("afterbegin", newLi);
       });
 }else{
      taskList = []

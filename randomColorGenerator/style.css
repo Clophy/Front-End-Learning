@@ -1,0 +1,65 @@
+body{
+    background-color: salmon;
+}
+
+.container{
+    width: 96%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.cards{
+    width: 96%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 300px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .81);
+    border-radius: 25px;
+    color: white;
+    margin-top: 35px;
+}
+
+button{
+    background-color: cadetblue;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 35px 0;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+}
+button:hover{
+    background-color: darkcyan;
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 80%;
+    }
+}
+@media screen and (min-width:401px ) and (max-width: 768px){
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (min-width:769px ) and (max-width: 1024px){
+    .card{
+        width: 30%;
+    }
+}

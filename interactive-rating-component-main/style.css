@@ -1,18 +1,17 @@
 .main{
     height: 100vh;
-    background-color: salmon;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card{
-    padding: 15px;
-    width: 350px;
+    padding: 24px;
+    width: 400px;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    background-color: darkgray;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
 }
 

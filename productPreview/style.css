@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --veryDarkcyan: hsl(158, 26%, 27%);
+
+}
+
+
+html, body{
+    font-size: 14px;
+    background-color: var(--Cream);
+    height: 100%;
+    width: 100%;
+}
+
+
+.container{
+    width: 600px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--White);
+}
+
+.left-side{
+    width: 50%;
+    background-image: url("./img/image-product-desktop.jpg");
+    background-size: cover;
+
+}
+.left-side img{
+    vertical-align: bottom;
+}
+
+.right-side{
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side h2{
+    letter-spacing: 4px;
+    color: #999;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.right-side h1{
+    margin-top: 24px;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.right-side p{
+    color: #999;
+    line-height: 1.5rem;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.right-side .prices{
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: center;
+}
+
+.prices span{
+    font-size: 38px;
+    color: var(--Darkcyan);
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+}
+
+.prices del{
+    color: #999;
+    font-size: 16px;
+}
+
+.right-side button{
+    background-color: var(--Darkcyan);
+    padding: 18px 0px;
+    border-radius:12px;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.right-side button:active{
+    background-color: var(--veryDarkcyan);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .container{
+        margin-top: 24px;
+        flex-direction: column;
+        width: 96%;
+    }
+    .left-side{
+        width: 100%;
+        background-image: url("./img/image-product-mobile.jpg");
+        height: 400px;
+        background-position: center;
+    }
+    .right-side{
+        width: 100%;
+    }
+}

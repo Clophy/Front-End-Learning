@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <section class="main">
+    <div class="left-side">
+      <div class="card-front">
+        <div class="img"><img src="./images/card-logo.svg" alt=""></div>
+        <p class="front-num">0000 0000 0000 0000</p>
+        <div class="front-sub">
+          <p class="front-name">Jane Appleseed</p>
+        <div class="front-date"><span class="front-exp-date">00</span> / <span class="front-exp-date2">00</span></div>
+        </div>
+      </div>
+      <div class="card-back">
+        <p class="back-num">000</p>
+      </div>
+    </div>
+    <div class="right-side">
+     
+        <form action="" autocomplete="off">
+          <label for="card-name">Cardholder Name</label>
+      <input type="text" id="card-name" maxlength="19" placeholder="e.g. Jane Appleseed">
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+      <div class="date-label">
+      <label for="exp-date"> Exp. Date (MM/YY)</label>
+      <label for="cvc">CVC</label>
+      </div>
+      <div class="datecvc">
+        <div class="date-input">
+          <input type="text" id="exp-date" placeholder="MM"  maxlength="2">
+          <input type="text" id="exp-date2" placeholder="YY" maxlength="2">
+          </div>
+          <div class="date-cvc">
+          <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3"> 
+          </div>
+      </div>
+
+      <button>Confirm</button>
+        </form> 
+        
+      
+    </div>
+  </section>
+
+ 
+  
+  <script src="./script.js"></script>
+</body>
+</html>

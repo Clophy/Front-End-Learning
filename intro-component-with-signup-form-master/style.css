@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+--Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--DarkBlue: hsl(249, 10%, 26%) ;
+--GrayishBlue: hsl(246, 25%, 77%);
+}
+
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: var(--Red);
+    opacity: .8;
+}
+
+.left-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.left-side h1{
+    font-size: 4rem;
+    
+}
+.left-side p, .left-side h1{
+    color: #fff;
+    width: 80%;
+}
+
+.left-side p{
+    margin-top: 24px;
+    font-size: 1.2rem;
+}
+.right-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.right-side h2{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    background-color: var(--Blue);
+    border-radius: 12px;
+}
+
+.right-side form{
+    width: 480px;
+    margin-top: 16px;
+    padding: 24px;
+    border-radius: 12px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.right-side form .inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.right-side form .inputs input{
+    width: 92%;
+    border: 1px solid #999;
+    margin-top: 24px;
+    outline: none;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+.right-side .inputs img{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 24px;
+    position: absolute;
+    right: 6%;
+} 
+
+form button{
+    padding: 12px;
+    background-color: var(--Green);
+    width: 92%;
+    margin-top: 24px;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 12px;
+}
+
+form>span{
+    color: #666;
+    margin-top: 18px;
+    font-size: .7rem;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputs span{
+    position: absolute;
+    font-size: 0.7rem;
+    color: var(--Red);
+    right: 6%;
+    bottom: -24%;
+}
+
+.red{
+    color: var(--Red);
+}
+
+.display{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    main {
+      flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .left-side h1{
+        font-size: 2rem;
+        margin-top: 32px;
+        text-align: center;
+        width: 100%;
+    }
+    .left-side p{
+        font-size: 1rem;
+        margin-top: 32px;
+        text-align: center;
+        width: 92%;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .right-side .container{
+        width: 100%;
+        padding: 12px;
+        margin-top: 24px;
+    }
+    .right-side .container form{
+        width: 100%;
+    }
+  }
